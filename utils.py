@@ -546,9 +546,9 @@ def get_data_loaders(dataset, data_root=None, augment=False, batch_size=64,
                      **kwargs):
 
     # Append /FILENAME.hdf5 to root if using hdf5
-    data_root += '/%s' % root_dict[dataset]
+    #data_root += '/%s' % root_dict[dataset]
     #print('Using dataset root location %s' % data_root)
-    #data_root = "/home/shared/cs_vision/train_frames_12fps_128_center_cropped_h5/compact.h5"
+    data_root = "/home/shared/cs_vision/train_frames_12fps_128_center_cropped_h5/compact.h5"
     which_dataset = dset_dict[dataset]
     norm_mean = [0.5, 0.5, 0.5]
     norm_std = [0.5, 0.5, 0.5]
